@@ -1,0 +1,30 @@
+@import "../bootstrap/_bootstrap";
+@import "partials/mixin";
+
+@import "partials/preloader";
+@import "partials/home";
+
+
+body, html{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Lato', Arial, Helvetica, sans-serif;
+	font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+ul{
+	padding:0;
+	li{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+}

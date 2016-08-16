@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300&subset=latin,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans");
+$colorBlueText: #1AC6FF;
+$colorBlueBtn: #1AC6FF;
+$colorText: #000;
+$colorWhite: #fff;
+$fontPT: 'PT Sans', Arial, Helvetica, sans-serif;
+
+
+@mixin button($backgroundColor, $borderColor, $padding){
+	background:	$backgroundColor;
+	border: 1px solid $borderColor;
+	border-radius: 3px;
+	text-align: center;
+	a{
+		font-size: 0.9em;
+		text-decoration: none;
+		color: $colorWhite;
+		text-transform: uppercase;
+		padding: $padding;
+		
+	}
+}

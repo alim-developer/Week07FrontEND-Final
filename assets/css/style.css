@@ -5811,17 +5811,8 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-@keyframes spin {
-  0% {
-    transform: rotate(-360deg); }
-  50% {
-    transform: rotate(0deg); }
-  100% {
-    transform: rotate(360deg); } }
-#preloader div {
-  margin: 0 auto;
-  margin-top: 320px;
-  animation: spin 5s ease infinite; }
+.clearFix {
+  clear: both; }
 
 #home {
   background-image: url("../images/backgroundImage.jpg");
@@ -5835,10 +5826,13 @@ button.close {
     margin-top: 15px; }
     #home .container .navbar .navbar-brand {
       width: 150px; }
+    #home .container .navbar .collapsed {
+      margin-top: 15px; }
+  #home .container .navbar-brand {
+    margin-right: 20px; }
   #home .container .navbar-nav {
     margin-top: 5px; }
     #home .container .navbar-nav .activ {
-      margin-left: 20px;
       border-bottom: 2px solid #1AC6FF; }
       #home .container .navbar-nav .activ a {
         color: #1AC6FF; }
@@ -5853,6 +5847,19 @@ button.close {
       font-weight: 500; }
       #home .container .navbar-nav a:hover {
         color: #1AC6FF; }
+    #home .container .navbar-nav .drop ul {
+      position: absolute; }
+      #home .container .navbar-nav .drop ul li {
+        width: 190px;
+        background-color: #272727;
+        padding: 0 15px; }
+        #home .container .navbar-nav .drop ul li:hover {
+          background-color: #000; }
+        #home .container .navbar-nav .drop ul li a {
+          display: block;
+          text-decoration: none;
+          padding: 15px 0;
+          border-bottom: 1px solid #343434; }
   #home .container button {
     margin: 5px 0;
     background: transparent;
@@ -5862,6 +5869,7 @@ button.close {
     padding: 7px 0;
     margin-top: 3px; }
     #home .container button a {
+      display: block;
       font-size: 0.9em;
       text-decoration: none;
       color: #fff;
@@ -5905,6 +5913,7 @@ button.close {
       color: #fff;
       padding: 10px 25px; }
       #home .container .content button a {
+        display: block;
         font-size: 0.9em;
         text-decoration: none;
         color: #fff;
@@ -5950,14 +5959,108 @@ button.close {
         font-size: 1.6em; } }
   @media screen and (max-width: 480px) {
     #home .container .content {
-      margin: 115px 0; } }
+      margin: 115px 0; }
+    #home .container li {
+      text-align: center; }
+    #home .container form {
+      text-align: center; } }
   @media screen and (min-width: 480px) and (max-width: 768px) {
     #home .container .content {
-      margin: 155px 0; } }
+      margin: 155px 0; }
+    #home .container li {
+      text-align: center; }
+    #home .container .extra {
+      display: none; }
+    #home .container form {
+      text-align: center; } }
   @media screen and (min-width: 768px) and (max-width: 1024px) {
+    #home .container .navbar-brand {
+      display: none; }
     #home .container .content {
       margin: 180px 0; } }
 
+#about .backColor {
+  background-color: #F0F0F0; }
+  #about .backColor .logo {
+    padding: 25px 0; }
+    #about .backColor .logo img {
+      margin: 0 20px; }
+#about .cont .tabs {
+  padding: 60px; }
+  #about .cont .tabs button {
+    width: 185px;
+    height: 60px;
+    border: 1px solid lightgray;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    text-transform: uppercase; }
+    #about .cont .tabs button:hover {
+      background-color: #1AC6FF;
+      color: #fff; }
+#about .cont .firstTab, #about .cont .secondTab, #about .cont .thirdTab {
+  border-bottom: 1px solid lightgray;
+  padding: 15px 0; }
+  #about .cont .firstTab img, #about .cont .secondTab img, #about .cont .thirdTab img {
+    width: 100%; }
+  #about .cont .firstTab .textTab, #about .cont .secondTab .textTab, #about .cont .thirdTab .textTab {
+    padding: 35px 10px; }
+    #about .cont .firstTab .textTab .h2, #about .cont .secondTab .textTab .h2, #about .cont .thirdTab .textTab .h2 {
+      margin-top: 30px; }
+    #about .cont .firstTab .textTab h2, #about .cont .secondTab .textTab h2, #about .cont .thirdTab .textTab h2 {
+      text-transform: uppercase;
+      font-size: 2.2em; }
+      #about .cont .firstTab .textTab h2 span, #about .cont .secondTab .textTab h2 span, #about .cont .thirdTab .textTab h2 span {
+        color: #1AC6FF; }
+    #about .cont .firstTab .textTab .p, #about .cont .secondTab .textTab .p, #about .cont .thirdTab .textTab .p {
+      padding: 0 100px; }
+    #about .cont .firstTab .textTab p, #about .cont .secondTab .textTab p, #about .cont .thirdTab .textTab p {
+      font-size: 1em;
+      font-family: "PT Sans", Arial, Helvetica, sans-serif; }
+      #about .cont .firstTab .textTab p:first-of-type, #about .cont .secondTab .textTab p:first-of-type, #about .cont .thirdTab .textTab p:first-of-type {
+        margin: 20px 0; }
+      #about .cont .firstTab .textTab p:nth-child(3), #about .cont .secondTab .textTab p:nth-child(3), #about .cont .thirdTab .textTab p:nth-child(3) {
+        margin-bottom: 50px; }
+    #about .cont .firstTab .textTab button, #about .cont .secondTab .textTab button, #about .cont .thirdTab .textTab button {
+      background: transparent;
+      border: 1px solid #1AC6FF;
+      border-radius: 3px;
+      text-align: center;
+      margin: 5px;
+      transition: all 0.3s ease; }
+      #about .cont .firstTab .textTab button a, #about .cont .secondTab .textTab button a, #about .cont .thirdTab .textTab button a {
+        display: block;
+        font-size: 0.9em;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 13px 23px; }
+      #about .cont .firstTab .textTab button:hover, #about .cont .secondTab .textTab button:hover, #about .cont .thirdTab .textTab button:hover {
+        background-color: #1AC6FF;
+        color: #000; }
+        #about .cont .firstTab .textTab button:hover a, #about .cont .secondTab .textTab button:hover a, #about .cont .thirdTab .textTab button:hover a {
+          color: #fff;
+          transition: all 0.3s ease; }
+      #about .cont .firstTab .textTab button a, #about .cont .secondTab .textTab button a, #about .cont .thirdTab .textTab button a {
+        color: #1AC6FF; }
+#about .cont .thirdTab i {
+  color: #1AC6FF;
+  padding-bottom: 20px; }
+#about .cont .thirdTab .col-md-4 {
+  padding: 70px 0; }
+#about .cont .thirdTab h2 {
+  font-size: 3em; }
+#about .cont .thirdTab h5 {
+  font-size: 1em;
+  font-weight: bold; }
+#about .cont .thirdTab p {
+  margin: 15px 0;
+  display: inline-block; }
+#about .cont .thirdTab .company p {
+  padding: 0 50px; }
+
+@media screen and (max-width: 480px) {
+  .tabs button {
+    width: 230px; } }
 body, html {
   margin: 0;
   padding: 0; }

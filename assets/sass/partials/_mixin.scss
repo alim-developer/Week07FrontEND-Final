@@ -6,18 +6,21 @@ $colorText: #000;
 $colorWhite: #fff;
 $fontPT: 'PT Sans', Arial, Helvetica, sans-serif;
 
+.clearFix{
+	clear: both;
+}
 
 @mixin button($backgroundColor, $borderColor, $padding){
 	background:	$backgroundColor;
 	border: 1px solid $borderColor;
 	border-radius: 3px;
 	text-align: center;
-	a{
+	a{	
+		display: block;
 		font-size: 0.9em;
 		text-decoration: none;
 		color: $colorWhite;
 		text-transform: uppercase;
 		padding: $padding;
-		
 	}
 }

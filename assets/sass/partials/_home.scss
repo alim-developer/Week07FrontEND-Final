@@ -13,12 +13,18 @@
 			.navbar-brand{
 				width: 150px;
 			}
+			.collapsed {
+				margin-top: 15px;
+			}
+		}
+		.navbar-brand{
+			margin-right: 20px;
 		}
 		
 		.navbar-nav{
 			margin-top: 5px;
 			.activ{
-				margin-left: 20px;
+				
 				border-bottom: 2px solid $colorBlueBtn;
 				a{
 					color: $colorBlueText;
@@ -38,6 +44,36 @@
 					color: $colorBlueText;
 				}
 			}
+
+			.drop{
+
+				.extra{
+
+
+				}
+				ul{
+					position: absolute;
+					
+					li{
+						width: 190px;
+						background-color: #272727;
+						padding: 0 15px;
+						&:hover{
+							background-color: #000;
+						}
+						a{
+							display: block;
+							text-decoration: none;
+							padding: 15px 0;
+							border-bottom: 1px solid darken(gray, 30%);
+
+
+						}
+					}
+				}
+			}
+			
+
 		}
 
 		button{
@@ -168,15 +204,41 @@
 			.content{
 				margin: 115px 0;
 			}
+			
+			li {
+				text-align: center;
+			}
+			.extra{
+				
+			}
+			form {
+				text-align: center;
+			}
 		}
 
 		@media screen and (min-width: 480px) and (max-width: 768px){
 			.content{
 				margin: 155px 0;
 			}
+
+			.navbar-brand{
+				
+			}
+			li {
+				text-align: center;
+			}
+			.extra{
+				display: none;
+			}
+			form {
+				text-align: center;
+			}
 		}
 
 		@media screen and (min-width: 768px) and (max-width: 1024px){
+			.navbar-brand{
+				display: none;
+			}
 			.content{
 				margin: 180px 0;
 			}	

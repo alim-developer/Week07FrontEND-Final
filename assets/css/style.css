@@ -6061,6 +6061,248 @@ button.close {
 @media screen and (max-width: 480px) {
   .tabs button {
     width: 230px; } }
+#features .container-fluid {
+  background-color: #F0F0F0; }
+  #features .container-fluid .container {
+    padding-top: 50px;
+    position: relative; }
+    #features .container-fluid .container .lorem {
+      width: 30%;
+      float: left;
+      margin-top: 32px; }
+      #features .container-fluid .container .lorem div {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border: 1px solid #1AC6FF;
+        padding: 30px;
+        width: 100%; }
+        #features .container-fluid .container .lorem div h4 {
+          font-size: 1.1em;
+          font-weight: bold;
+          text-transform: uppercase;
+          line-height: 30px;
+          color: #1AC6FF; }
+        #features .container-fluid .container .lorem div p {
+          font-family: "PT Sans", Arial, Helvetica, sans-serif;
+          font-size: 1em;
+          line-height: 30px;
+          color: #5a5a5a;
+          margin: 0; }
+    #features .container-fluid .container img {
+      width: 76%;
+      position: absolute;
+      right: 0; }
+    @media screen and (min-width: 480px) and (max-width: 1200px) {
+      #features .container-fluid .container .lorem {
+        display: flex;
+        justify-content: center;
+        width: 100%; }
+      #features .container-fluid .container img {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        top: 35px; } }
+    @media screen and (min-width: 480px) and (max-width: 630px) {
+      #features .container-fluid .container .lorem div {
+        padding: 15px; }
+        #features .container-fluid .container .lorem div h4 {
+          font-size: 1em; }
+        #features .container-fluid .container .lorem div p {
+          line-height: 20px; }
+      #features .container-fluid .container img {
+        position: relative;
+        top: 15px; } }
+    @media screen and (max-width: 480px) {
+      #features .container-fluid .container .lorem {
+        width: 100%; }
+        #features .container-fluid .container .lorem div {
+          padding: 15px; }
+          #features .container-fluid .container .lorem div h4 {
+            font-size: 1em; }
+          #features .container-fluid .container .lorem div p {
+            line-height: 20px; }
+      #features .container-fluid .container img {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        top: 10px; } }
+#features .feature {
+  margin: 50px 0; }
+  #features .feature .col-md-3 {
+    margin-top: 60px; }
+    #features .feature .col-md-3 i {
+      color: #1AC6FF;
+      margin-bottom: 25px; }
+    #features .feature .col-md-3 h4 {
+      font-size: 1em;
+      font-weight: bold;
+      line-height: 25px; }
+    #features .feature .col-md-3 p {
+      font-size: 1em;
+      font-family: "PT Sans", Arial, Helvetica, sans-serif;
+      line-height: 25px;
+      color: gray; }
+    #features .feature .col-md-3 .star {
+      width: 50px;
+      margin: 0 auto; }
+      #features .feature .col-md-3 .star i {
+        margin-bottom: 0; }
+        #features .feature .col-md-3 .star i:last-child {
+          margin-bottom: 28px; }
+
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+  .container {
+    padding-bottom: 35px; } }
+@media screen and (max-width: 480px) {
+  .container {
+    padding-bottom: 20px; } }
+#prices .container-fluid {
+  background-image: url("../images/backgroundImage.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover; }
+  #prices .container-fluid .container {
+    padding: 45px 0; }
+    #prices .container-fluid .container h2 {
+      color: #fff;
+      font-size: 3em; }
+    @media screen and (max-width: 480px) {
+      #prices .container-fluid .container h2 {
+        font-size: 2.5em; } }
+    #prices .container-fluid .container span {
+      font-family: "PT Sans", Arial, Helvetica, sans-serif;
+      font-size: 1em;
+      color: #fff; }
+    #prices .container-fluid .container input {
+      width: 182px;
+      height: 45px;
+      border: none;
+      border-left: 3px solid #1AC6FF;
+      text-indent: 15px;
+      font-size: 1.2em;
+      margin-top: 15px; }
+      #prices .container-fluid .container input:last-child {
+        width: 100%; }
+    #prices .container-fluid .container button {
+      background: transparent;
+      border: 1px solid #fff;
+      border-radius: 3px;
+      text-align: center;
+      margin-top: 15px;
+      transition: all 0.3s ease; }
+      #prices .container-fluid .container button a {
+        display: block;
+        font-size: 0.9em;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 12px 28px; }
+      #prices .container-fluid .container button:hover {
+        background-color: #fff; }
+        #prices .container-fluid .container button:hover a {
+          color: #1AC6FF;
+          transition: all 0.3s ease; }
+
+#pricesTwo .container .product h2 {
+  font-size: 3em;
+  margin-bottom: 10px; }
+  #pricesTwo .container .product h2 span {
+    color: #1AC6FF; }
+#pricesTwo .container .product p {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif; }
+#pricesTwo .container .product:nth-of-type(1) {
+  padding: 60px; }
+#pricesTwo .container .product .text {
+  width: 40%;
+  margin: 0 auto; }
+@media screen and (min-width: 480px) and (max-width: 960px) {
+  #pricesTwo .container .product .text {
+    width: 60%; } }
+#pricesTwo .container .columns .backgroundGray {
+  background-color: #F9F9F9;
+  box-shadow: 0 0 1px lightgray;
+  transition: all 0.4s ease; }
+  #pricesTwo .container .columns .backgroundGray h4 {
+    font-size: 1.8em;
+    text-transform: uppercase;
+    padding: 25px 0;
+    transition: all 0.4s ease; }
+  #pricesTwo .container .columns .backgroundGray h2 {
+    font-size: 8em;
+    color: #1AC6FF;
+    transition: all 0.4s ease; }
+  #pricesTwo .container .columns .backgroundGray i {
+    font-size: 3em;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #1AC6FF;
+    transition: all 0.4s ease; }
+  #pricesTwo .container .columns .backgroundGray .darkGray {
+    padding: 10px 0;
+    background-color: #F2F2F3;
+    transition: all 0.4s ease; }
+    #pricesTwo .container .columns .backgroundGray .darkGray .costs {
+      width: 200px;
+      margin: 0 auto; }
+      #pricesTwo .container .columns .backgroundGray .darkGray .costs i {
+        float: left; }
+  #pricesTwo .container .columns .backgroundGray .data {
+    padding: 40px; }
+    #pricesTwo .container .columns .backgroundGray .data li {
+      font-size: 1.1em;
+      border-bottom: 1px solid #F2F2F3;
+      padding: 20px 0;
+      transition: all 0.4s ease; }
+      #pricesTwo .container .columns .backgroundGray .data li:last-child {
+        border: none; }
+    #pricesTwo .container .columns .backgroundGray .data button {
+      background: transparent;
+      border: 1px solid #1AC6FF;
+      border-radius: 3px;
+      text-align: center;
+      width: 100%;
+      transition: all 0.4s ease; }
+      #pricesTwo .container .columns .backgroundGray .data button a {
+        display: block;
+        font-size: 0.9em;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 12px 0; }
+      #pricesTwo .container .columns .backgroundGray .data button a {
+        color: #1AC6FF; }
+  #pricesTwo .container .columns .backgroundGray p {
+    text-transform: uppercase;
+    font-size: 1em;
+    transition: all 0.4s ease; }
+  #pricesTwo .container .columns .backgroundGray:hover {
+    background-color: #1AC6FF; }
+    #pricesTwo .container .columns .backgroundGray:hover h4, #pricesTwo .container .columns .backgroundGray:hover h2, #pricesTwo .container .columns .backgroundGray:hover p, #pricesTwo .container .columns .backgroundGray:hover i, #pricesTwo .container .columns .backgroundGray:hover li {
+      color: #fff; }
+    #pricesTwo .container .columns .backgroundGray:hover li {
+      border-bottom-color: #4dd3ff;
+      transition: all 0.4s ease; }
+    #pricesTwo .container .columns .backgroundGray:hover .darkGray {
+      background-color: #23ACDB; }
+    #pricesTwo .container .columns .backgroundGray:hover .data button {
+      border-color: #fff; }
+      #pricesTwo .container .columns .backgroundGray:hover .data button a {
+        color: #fff;
+        transition: all 0.4s ease; }
+      #pricesTwo .container .columns .backgroundGray:hover .data button:hover {
+        background-color: #fff; }
+        #pricesTwo .container .columns .backgroundGray:hover .data button:hover a {
+          color: #1AC6FF; }
+#pricesTwo .container .columns .disable {
+  pointer-events: none; }
+  #pricesTwo .container .columns .disable h4, #pricesTwo .container .columns .disable h2, #pricesTwo .container .columns .disable p, #pricesTwo .container .columns .disable i, #pricesTwo .container .columns .disable li {
+    color: #BEBEBE; }
+  #pricesTwo .container .columns .disable .data button {
+    border-color: #BEBEBE; }
+    #pricesTwo .container .columns .disable .data button a {
+      color: #BEBEBE; }
+
 body, html {
   margin: 0;
   padding: 0; }

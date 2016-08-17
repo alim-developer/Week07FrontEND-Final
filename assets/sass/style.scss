@@ -1,9 +1,12 @@
-@import "../bootstrap/_bootstrap";
+@import "../bootstrap/bootstrap";
 @import "partials/mixin";
 
 //@import "partials/preloader";
 @import "partials/home";
 @import "partials/about";
+@import "partials/features";
+@import "partials/prices";
+
 
 
 body, html{
@@ -16,7 +19,7 @@ body{
 	font-size: 15px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6{
 	margin: 0;
 	padding: 0;
 }

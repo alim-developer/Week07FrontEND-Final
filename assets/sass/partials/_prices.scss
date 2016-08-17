@@ -1,0 +1,193 @@
+#prices{
+	.container-fluid{
+		background-image: url("../images/backgroundImage.jpg");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center;
+		background-size: cover;
+		.container{
+			padding: 45px 0;
+			h2{
+				color: $colorWhite;
+				font-size: 3em;
+			}
+			@media screen and (max-width:480px){
+				h2{
+					font-size: 2.5em;
+				}
+			}
+			span{
+				font-family: $fontPT;
+				font-size: 1em;
+				color: $colorWhite;
+			}
+			input{
+				width: 182px;
+				height: 45px;
+				border: none;
+				border-left: 3px solid $colorBlueBtn;
+				text-indent: 15px;
+				font-size: 1.2em;
+				margin-top:15px;
+				&:last-child{
+					width: 100%;
+				}
+			}
+
+			button{
+				@include button(transparent, $colorWhite, 12px 28px);
+				margin-top:15px;
+				transition: all 0.3s ease;
+				&:hover{
+					background-color: #fff;
+					a{
+						color: $colorBlueText;
+						transition: all 0.3s ease;
+					}
+				}
+			}
+			
+
+		}
+	}
+}
+
+#pricesTwo{
+	.container{
+		.product{
+			h2{
+			font-size: 3em;
+			margin-bottom: 10px;
+				span{
+					color: $colorBlueText;
+				}
+			}
+			p{
+				font-family: $fontPT;
+			}
+			&:nth-of-type(1){
+				padding: 60px;
+			}	
+			.text{
+				width: 40%;
+				margin: 0 auto;
+			}
+			@media screen and (min-width: 480px) and (max-width: 960px){
+				.text{
+					width: 60%;
+				}	
+			}
+		}
+		
+		.columns{
+			.backgroundGray{
+				background-color: #F9F9F9;
+				box-shadow: 0 0 1px lightgray;;
+				transition: all 0.4s ease;
+				h4{
+					font-size: 1.8em;
+					text-transform: uppercase;
+					padding: 25px 0;
+					transition: all 0.4s ease;
+				}
+				h2{
+					font-size: 8em;
+					color: $colorBlueText;
+					transition: all 0.4s ease;
+				}
+				i{
+					font-size: 3em;
+					margin-top: 20px;
+					font-weight: bold;
+					color: $colorBlueText;
+					transition: all 0.4s ease;
+				}
+				.darkGray{
+					padding: 10px 0;
+					background-color: #F2F2F3;
+					transition: all 0.4s ease;
+					.costs{
+						width:200px;
+						margin: 0 auto;
+
+						i{
+							float: left;
+						}
+					}
+				}
+				.data{
+					padding: 40px;
+
+					li{
+						font-size: 1.1em;
+						border-bottom: 1px solid #F2F2F3;
+						padding: 20px 0;
+						transition: all 0.4s ease;
+						&:last-child{
+							border: none;
+						}
+					}
+					button{
+						@include button(transparent, $colorBlueBtn, 12px 0 );
+						width: 100%;
+						transition: all 0.4s ease;
+						a{
+							color: $colorBlueBtn;
+						}
+					}
+				}
+				p{
+					text-transform: uppercase;
+					font-size: 1em;
+					transition: all 0.4s ease;
+				}
+
+				&:hover{
+					background-color: #1AC6FF;
+					h4, h2, p, i, li {
+						color: #fff;
+					}
+					li{
+						border-bottom-color:lighten(#1AC6FF, 10%);
+						transition: all 0.4s ease;
+					}
+					.darkGray{
+						background-color: #23ACDB;
+					}
+					.data{
+						button{
+							border-color: #fff;
+							a{
+								color: #fff;
+								transition: all 0.4s ease;
+							}
+							&:hover{
+								background-color: #fff;
+								a{
+									color: #1AC6FF;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.disable{
+				pointer-events: none;
+				h4, h2, p, i, li {
+					color: #BEBEBE;
+				}
+				.data{
+					button{
+						border-color: #BEBEBE;
+						a{
+							color: #BEBEBE;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+

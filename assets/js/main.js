@@ -134,4 +134,51 @@ function tabShow(){
 }
 tabShow();
 
-	
+
+function features(){
+	$("#features img").eq(1).hide();
+	$("#features img").eq(2).hide();
+	$("#features .button").eq(0).children().css("color","#fff");
+
+	$("#features .button").eq(0).css({
+			backgroundColor: "#1AC6FF",
+			cursor: "pointer"
+		}).click(function(){
+		$("#features img").eq(0).show();
+		$("#features img").eq(1).hide();
+		$("#features img").eq(2).hide();
+		$("#features .button").eq(0).css("background-color", "#1AC6FF");
+		$("#features .button").eq(1).css("background-color", "");
+		$("#features .button").eq(2).css("background-color", "");
+		$("#features .button").eq(0).children().css("color","#fff");
+		$("#features .button").eq(1).children().css("color","");
+		$("#features .button").eq(2).children().css("color","");
+	});
+	$("#features .button").eq(1).css({
+			cursor: "pointer"
+		}).click(function(){
+		$("#features img").eq(0).hide();
+		$("#features img").eq(1).show();
+		$("#features img").eq(2).hide();
+		$("#features .button").eq(0).css("background-color", "");
+		$("#features .button").eq(1).css("background-color", "#1AC6FF");
+		$("#features .button").eq(2).css("background-color", "");
+		$("#features .button").eq(0).children().css("color","");
+		$("#features .button").eq(1).children().css("color","#fff");
+		$("#features .button").eq(2).children().css("color","");
+	});
+	$("#features .button").eq(2).css({
+			cursor: "pointer"
+		}).click(function(){
+		$("#features img").eq(0).hide();
+		$("#features img").eq(1).hide();
+		$("#features img").eq(2).show();
+		$("#features .button").eq(0).css("background-color", "");
+		$("#features .button").eq(1).css("background-color", "");
+		$("#features .button").eq(2).css("background-color", "#1AC6FF");
+		$("#features .button").eq(0).children().css("color","");
+		$("#features .button").eq(1).children().css("color","");
+		$("#features .button").eq(2).children().css("color","#fff");
+	});
+}
+features();

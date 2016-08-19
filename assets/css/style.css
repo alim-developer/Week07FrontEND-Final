@@ -6162,67 +6162,81 @@ button.close {
   background-attachment: fixed;
   background-position: center;
   background-size: cover; }
-  #prices .container-fluid .container {
+  #prices .container-fluid .container:first-of-type {
     padding: 45px 0; }
+  #prices .container-fluid .container h2 {
+    color: #fff;
+    font-size: 3em; }
+  @media screen and (max-width: 480px) {
     #prices .container-fluid .container h2 {
+      font-size: 2.5em; } }
+  #prices .container-fluid .container span {
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #fff; }
+  #prices .container-fluid .container input {
+    width: 182px;
+    height: 45px;
+    border: none;
+    border-left: 3px solid #1AC6FF;
+    text-indent: 15px;
+    font-size: 1.2em;
+    margin-top: 15px; }
+    #prices .container-fluid .container input:last-child {
+      width: 100%; }
+  #prices .container-fluid .container button {
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    text-align: center;
+    margin-top: 15px;
+    transition: all 0.3s ease; }
+    #prices .container-fluid .container button a {
+      display: block;
+      font-size: 0.9em;
+      text-decoration: none;
       color: #fff;
-      font-size: 3em; }
-    @media screen and (max-width: 480px) {
-      #prices .container-fluid .container h2 {
-        font-size: 2.5em; } }
-    #prices .container-fluid .container span {
-      font-family: "PT Sans", Arial, Helvetica, sans-serif;
-      font-size: 1em;
-      color: #fff; }
-    #prices .container-fluid .container input {
-      width: 182px;
-      height: 45px;
-      border: none;
-      border-left: 3px solid #1AC6FF;
-      text-indent: 15px;
-      font-size: 1.2em;
-      margin-top: 15px; }
-      #prices .container-fluid .container input:last-child {
-        width: 100%; }
-    #prices .container-fluid .container button {
-      background: transparent;
-      border: 1px solid #fff;
-      border-radius: 3px;
-      text-align: center;
-      margin-top: 15px;
-      transition: all 0.3s ease; }
-      #prices .container-fluid .container button a {
-        display: block;
-        font-size: 0.9em;
-        text-decoration: none;
-        color: #fff;
-        text-transform: uppercase;
-        padding: 12px 28px; }
-      #prices .container-fluid .container button:hover {
-        background-color: #fff; }
-        #prices .container-fluid .container button:hover a {
-          color: #1AC6FF;
-          transition: all 0.3s ease; }
+      text-transform: uppercase;
+      padding: 12px 28px; }
+    #prices .container-fluid .container button:hover {
+      background-color: #fff; }
+      #prices .container-fluid .container button:hover a {
+        color: #1AC6FF;
+        transition: all 0.3s ease; }
 
-#pricesTwo .container .product h2 {
-  font-size: 3em;
-  margin-bottom: 10px; }
-  #pricesTwo .container .product h2 span {
-    color: #1AC6FF; }
-#pricesTwo .container .product p {
-  font-family: "PT Sans", Arial, Helvetica, sans-serif; }
-#pricesTwo .container .product:nth-of-type(1) {
+#pricesTwo .container .product {
   padding: 60px; }
-#pricesTwo .container .product .text {
-  width: 40%;
-  margin: 0 auto; }
-@media screen and (min-width: 480px) and (max-width: 960px) {
+  #pricesTwo .container .product h2 {
+    font-size: 3em;
+    margin-bottom: 10px; }
+    #pricesTwo .container .product h2 span {
+      color: #1AC6FF; }
+  #pricesTwo .container .product p {
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    font-size: 1.1em; }
   #pricesTwo .container .product .text {
-    width: 60%; } }
+    width: 45%;
+    margin: 0 auto; }
+  @media screen and (max-width: 480px) {
+    #pricesTwo .container .product .text {
+      width: 100%; }
+    #pricesTwo .container .product h2 {
+      font-size: 1.9em; }
+    #pricesTwo .container .product p {
+      font-size: 0.9em; } }
+  @media screen and (min-width: 480px) and (max-width: 960px) {
+    #pricesTwo .container .product .text {
+      width: 60%; }
+    #pricesTwo .container .product h2 {
+      font-size: 1.9em; }
+    #pricesTwo .container .product p {
+      font-size: 0.9em; } }
 #pricesTwo .container .columns .backgroundGray {
   background-color: #F9F9F9;
   box-shadow: 0 0 1px lightgray;
   transition: all 0.4s ease; }
+  #pricesTwo .container .columns .backgroundGray:nth-of-type(1) {
+    margin: 30px 0; }
   #pricesTwo .container .columns .backgroundGray h4 {
     font-size: 1.8em;
     text-transform: uppercase;
@@ -6248,7 +6262,8 @@ button.close {
       #pricesTwo .container .columns .backgroundGray .darkGray .costs i {
         float: left; }
   #pricesTwo .container .columns .backgroundGray .data {
-    padding: 40px; }
+    padding: 40px;
+    padding-bottom: 80px; }
     #pricesTwo .container .columns .backgroundGray .data li {
       font-size: 1.1em;
       border-bottom: 1px solid #F2F2F3;
@@ -6275,6 +6290,7 @@ button.close {
   #pricesTwo .container .columns .backgroundGray p {
     text-transform: uppercase;
     font-size: 1em;
+    color: #1AC6FF;
     transition: all 0.4s ease; }
   #pricesTwo .container .columns .backgroundGray:hover {
     background-color: #1AC6FF; }
@@ -6294,6 +6310,15 @@ button.close {
         background-color: #fff; }
         #pricesTwo .container .columns .backgroundGray:hover .data button:hover a {
           color: #1AC6FF; }
+  @media screen and (min-width: 750px) and (max-width: 1000px) {
+    #pricesTwo .container .columns .backgroundGray h2 {
+      font-size: 5em; }
+    #pricesTwo .container .columns .backgroundGray .darkGray .costs {
+      width: 125px;
+      margin-bottom: 5px; }
+    #pricesTwo .container .columns .backgroundGray .data li {
+      padding: 15px 0;
+      font-size: 0.9em; } }
 #pricesTwo .container .columns .disable {
   pointer-events: none; }
   #pricesTwo .container .columns .disable h4, #pricesTwo .container .columns .disable h2, #pricesTwo .container .columns .disable p, #pricesTwo .container .columns .disable i, #pricesTwo .container .columns .disable li {
@@ -6302,6 +6327,173 @@ button.close {
     border-color: #BEBEBE; }
     #pricesTwo .container .columns .disable .data button a {
       color: #BEBEBE; }
+#pricesTwo .backColor {
+  background-color: #F0F0F0; }
+  #pricesTwo .backColor .logo {
+    padding: 25px 0; }
+    #pricesTwo .backColor .logo img {
+      margin: 0 20px; }
+
+#team .container-fluid {
+  background-image: url("../images/backgroundImage.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 245px; }
+  #team .container-fluid .container:first-of-type {
+    padding: 45px 0; }
+  #team .container-fluid .container i {
+    color: #1AC6FF; }
+  #team .container-fluid .container .i {
+    transform: rotate(180deg); }
+  #team .container-fluid .container h2 {
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 30px; }
+    #team .container-fluid .container h2 span {
+      color: #1AC6FF; }
+  #team .container-fluid .container p {
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #fff; }
+  @media screen and (max-width: 480px) {
+    #team .container-fluid .container h2 {
+      font-size: 1.9em; } }
+
+#profile .container .profile {
+  margin: 0 auto;
+  width: 780px; }
+  #profile .container .profile .profilDate {
+    float: left;
+    cursor: pointer;
+    padding: 40px 0;
+    opacity: 0.5;
+    transition: all 0.3s ease; }
+    #profile .container .profile .profilDate:hover {
+      opacity: 1; }
+      #profile .container .profile .profilDate:hover h5 {
+        color: #1AC6FF;
+        transition: all 0.3s ease; }
+      #profile .container .profile .profilDate:hover span {
+        color: #1AC6FF;
+        transition: all 0.3s ease; }
+    #profile .container .profile .profilDate img {
+      border-radius: 50%;
+      width: 70px;
+      float: left;
+      margin-right: 10px; }
+    #profile .container .profile .profilDate div {
+      width: 260px;
+      padding: 20px;
+      padding-bottom: 0; }
+      #profile .container .profile .profilDate div h5 {
+        font-size: 0.9em;
+        margin-bottom: 5px;
+        transition: all 0.4s ease; }
+      #profile .container .profile .profilDate div p {
+        font-family: "PT Sans", Arial, Helvetica, sans-serif;
+        font-size: 1em; }
+        #profile .container .profile .profilDate div p span {
+          transition: all 0.3s ease; }
+#profile .container .behind {
+  padding: 60px 0; }
+  #profile .container .behind h2 {
+    font-size: 3em;
+    margin-bottom: 15px; }
+    #profile .container .behind h2 span {
+      color: #1AC6FF; }
+  #profile .container .behind .footerParagraph {
+    width: 31%;
+    margin: 0 auto;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    font-size: 1em; }
+  #profile .container .behind .footerP {
+    width: 64%;
+    padding: 30px 0;
+    margin: 0 auto;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    font-size: 1em; }
+@media screen and (max-width: 480px) {
+  #profile .container .behind h2 {
+    font-size: 1.8em; }
+  #profile .container .behind .footerParagraph {
+    width: 100%;
+    font-size: 0.9em;
+    line-height: 24px; }
+  #profile .container .behind .footerP {
+    width: 100%;
+    font-size: 0.9em;
+    line-height: 24px; } }
+@media screen and (min-width: 480px) and (max-width: 750px) {
+  #profile .container .behind h2 {
+    font-size: 1.8em; }
+  #profile .container .behind .footerParagraph {
+    width: 100%;
+    font-size: 0.9em;
+    line-height: 24px; }
+  #profile .container .behind .footerP {
+    width: 100%;
+    font-size: 0.9em;
+    line-height: 24px; } }
+@media screen and (min-width: 750px) and (max-width: 970px) {
+  #profile .container .behind .footerParagraph {
+    width: 50%;
+    font-size: 0.9em;
+    line-height: 24px; }
+  #profile .container .behind .footerP {
+    width: 90%;
+    font-size: 0.9em;
+    line-height: 24px; } }
+@media screen and (min-width: 970px) and (max-width: 1170px) {
+  #profile .container .behind .footerParagraph {
+    width: 50%;
+    line-height: 24px; }
+  #profile .container .behind .footerP {
+    width: 75%;
+    line-height: 24px; } }
+#profile .container .people .opacity div {
+  background-color: #1AC6FF; }
+#profile .container .people img {
+  width: 100%;
+  position: relative;
+  opacity: 1;
+  transition: all 0.4s ease; }
+  #profile .container .people img:hover {
+    opacity: 0.3; }
+#profile .container .people p {
+  width: 200px;
+  position: absolute;
+  top: 0; }
+#profile .container .people h5 {
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 10px 0;
+  color: #1AC6FF; }
+#profile .container .people span {
+  margin: 0;
+  font-size: 0.9em;
+  font-weight: bold; }
+@media screen and (max-width: 480px) {
+  #profile .container .profile {
+    width: 100%;
+    padding: 20px 20px; }
+    #profile .container .profile .profilDate {
+      padding: 20px 0px;
+      width: 100%; } }
+@media screen and (min-width: 480px) and (max-width: 750px) {
+  #profile .container .profile {
+    width: 100%;
+    padding: 20px 30px; }
+    #profile .container .profile .profilDate {
+      padding: 20px 0px;
+      width: 100%; } }
+@media screen and (min-width: 750px) and (max-width: 970px) {
+  #profile .container .profile {
+    width: 100%; }
+    #profile .container .profile .profilDate {
+      width: calc(100% / 3); } }
 
 body, html {
   margin: 0;

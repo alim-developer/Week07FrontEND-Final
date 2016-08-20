@@ -356,3 +356,27 @@ function profile(){
 	//click olunma prosesi
 }
 profile();
+
+
+function people(){
+	$("#profile .opacity .icons div").hide();
+	$("#profile .opacity img").eq(0).mouseenter(function() {
+		$("#profile .opacity .icons").eq(0).children("div").show();
+	});
+	$("#profile .opacity .icons div").hide();
+	$("#profile .opacity img").eq(1).mouseenter(function() {
+		$("#profile .opacity .icons").eq(1).children("div").show();
+	});
+	$("#profile .opacity .icons div").hide();
+	$("#profile .opacity img").eq(2).mouseenter(function() {
+		$("#profile .opacity .icons").eq(2).children("div").show();
+	});
+	$("#profile .opacity .icons div").hide();
+	$("#profile .opacity img").eq(3).mouseenter(function() {
+		$("#profile .opacity .icons").eq(3).children("div").show();
+	});
+	$("#profile .opacity img").mouseleave(function() {
+		$("#profile .opacity .icons div").hide();
+	});
+}
+people();

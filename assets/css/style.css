@@ -6452,48 +6452,298 @@ button.close {
   #profile .container .behind .footerP {
     width: 75%;
     line-height: 24px; } }
-#profile .container .people .opacity div {
-  background-color: #1AC6FF; }
-#profile .container .people img {
-  width: 100%;
-  position: relative;
-  opacity: 1;
-  transition: all 0.4s ease; }
-  #profile .container .people img:hover {
-    opacity: 0.3; }
-#profile .container .people p {
-  width: 200px;
-  position: absolute;
-  top: 0; }
-#profile .container .people h5 {
-  font-size: 1em;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 10px 0;
-  color: #1AC6FF; }
-#profile .container .people span {
-  margin: 0;
-  font-size: 0.9em;
-  font-weight: bold; }
+#profile .container .people {
+  padding-bottom: 40px; }
+  #profile .container .people .opacity div {
+    background-color: #1AC6FF;
+    position: relative; }
+    #profile .container .people .opacity div .icons {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 15px;
+      z-index: 100;
+      background-color: transparent; }
+      #profile .container .people .opacity div .icons div {
+        width: 30px;
+        height: 30px;
+        border: 1px solid #fff;
+        border-radius: 2px;
+        display: inline-block;
+        margin: 0 5px;
+        padding: 3px;
+        cursor: pointer;
+        transition: all 0.4s ease; }
+        #profile .container .people .opacity div .icons div i {
+          color: #fff;
+          transition: all 0.4s ease; }
+        #profile .container .people .opacity div .icons div:hover {
+          background-color: #fff; }
+          #profile .container .people .opacity div .icons div:hover i {
+            color: #1AC6FF;
+            transition: all 0.4s ease; }
+  #profile .container .people img {
+    width: 100%;
+    position: relative;
+    opacity: 1;
+    z-index: 9;
+    transition: all 0.4s ease; }
+    #profile .container .people img:hover {
+      opacity: 0.2; }
+  #profile .container .people p {
+    width: 235px;
+    margin: 10px;
+    color: #fff;
+    position: absolute;
+    top: 40px; }
+  #profile .container .people .pd {
+    top: 20px; }
+  #profile .container .people .pp {
+    top: 80px; }
+  #profile .container .people h5 {
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10px 0;
+    color: #1AC6FF; }
+  #profile .container .people ul {
+    margin: 0;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif; }
+  @media screen and (min-width: 960px) and (max-width: 1200px) {
+    #profile .container .people p {
+      width: 190px;
+      top: 20px;
+      line-height: 18px; }
+    #profile .container .people .pd {
+      top: 5px; }
+    #profile .container .people .pp {
+      top: 60px; }
+    #profile .container .people .opacity div .icons div {
+      width: 25px;
+      height: 25px;
+      padding: 0; } }
+  @media screen and (min-width: 760px) and (max-width: 1000px) {
+    #profile .container .people p {
+      width: 135px;
+      top: 0px;
+      line-height: 14px;
+      font-size: 0.9em; }
+    #profile .container .people .pd {
+      top: 0px;
+      line-height: 11px;
+      font-size: 0.8em; }
+    #profile .container .people .pp {
+      top: 35px; }
+    #profile .container .people .opacity div .icons {
+      bottom: 5px; }
+      #profile .container .people .opacity div .icons div {
+        width: 23px;
+        height: 23px;
+        padding: 0;
+        margin: 0 1px; } }
+  @media screen and (min-width: 480px) and (max-width: 760px) {
+    #profile .container .people p {
+      width: 1px;
+      top: 0px;
+      line-height: 1px;
+      font-size: 0.1em; }
+    #profile .container .people .opacity div .icons {
+      bottom: -85px; }
+      #profile .container .people .opacity div .icons div {
+        width: 25px;
+        height: 25px;
+        padding: 0;
+        margin: 0 1px;
+        border-color: lightgray;
+        background-color: #fff; }
+        #profile .container .people .opacity div .icons div i {
+          color: #1AC6FF; }
+    #profile .container .people img {
+      opacity: 1; }
+      #profile .container .people img:hover {
+        opacity: 1; }
+    #profile .container .people ul {
+      margin-bottom: 40px; } }
+  @media screen and (max-width: 480px) {
+    #profile .container .people p {
+      width: 1px;
+      top: 0px;
+      line-height: 1px;
+      font-size: 0.1em; }
+    #profile .container .people .opacity div .icons {
+      bottom: -85px; }
+      #profile .container .people .opacity div .icons div {
+        width: 25px;
+        height: 25px;
+        padding: 0;
+        margin: 0 1px;
+        border-color: lightgray;
+        background-color: #fff; }
+        #profile .container .people .opacity div .icons div i {
+          color: #1AC6FF; }
+    #profile .container .people img {
+      opacity: 1; }
+      #profile .container .people img:hover {
+        opacity: 1; }
+    #profile .container .people ul {
+      margin-bottom: 40px; } }
 @media screen and (max-width: 480px) {
   #profile .container .profile {
     width: 100%;
     padding: 20px 20px; }
     #profile .container .profile .profilDate {
       padding: 20px 0px;
-      width: 100%; } }
+      width: 100%; }
+      #profile .container .profile .profilDate div {
+        width: 100%; } }
 @media screen and (min-width: 480px) and (max-width: 750px) {
   #profile .container .profile {
     width: 100%;
     padding: 20px 30px; }
     #profile .container .profile .profilDate {
       padding: 20px 0px;
-      width: 100%; } }
+      width: 100%; }
+      #profile .container .profile .profilDate div {
+        width: 100%; } }
 @media screen and (min-width: 750px) and (max-width: 970px) {
   #profile .container .profile {
     width: 100%; }
     #profile .container .profile .profilDate {
-      width: calc(100% / 3); } }
+      width: calc(100% / 3); }
+      #profile .container .profile .profilDate div {
+        width: 100%; } }
+
+#footer .container-fluid {
+  background-color: #1AC6FF; }
+  #footer .container-fluid .container {
+    padding: 40px 0; }
+    #footer .container-fluid .container i {
+      color: #fff; }
+    #footer .container-fluid .container h2 {
+      font-size: 3em;
+      color: #fff; }
+    #footer .container-fluid .container p {
+      font-size: 1em;
+      font-family: "PT Sans", Arial, Helvetica, sans-serif;
+      color: #fff; }
+    #footer .container-fluid .container button {
+      background: transparent;
+      border: 1px solid #fff;
+      border-radius: 3px;
+      text-align: center;
+      margin: 15px;
+      transition: all 0.3s ease; }
+      #footer .container-fluid .container button a {
+        display: block;
+        font-size: 0.9em;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 13px 23px; }
+      #footer .container-fluid .container button:hover {
+        background-color: #fff; }
+        #footer .container-fluid .container button:hover a {
+          color: #1AC6FF;
+          transition: all 0.3s ease; }
+    @media screen and (min-width: 1200px) {
+      #footer .container-fluid .container h2, #footer .container-fluid .container p {
+        text-align: left; } }
+    @media screen and (max-width: 480px) {
+      #footer .container-fluid .container h2 {
+        font-size: 2.4em; }
+      #footer .container-fluid .container p {
+        font-size: 0.9em;
+        line-height: 26px; } }
+    @media screen and (min-width: 480px) and (max-width: 760px) {
+      #footer .container-fluid .container h2 {
+        font-size: 2.4em; }
+      #footer .container-fluid .container p {
+        font-size: 0.9em; } }
+
+#footerInfo {
+  background-image: url("../images/backgroundImage.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover; }
+  #footerInfo .container {
+    padding-top: 70px;
+    padding-bottom: 25px; }
+    #footerInfo .container img {
+      opacity: 0.7; }
+    #footerInfo .container .pTags {
+      width: 80%; }
+      #footerInfo .container .pTags p {
+        color: #fff;
+        font-family: "PT Sans", Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        margin-top: 30px;
+        margin-bottom: 15px; }
+      #footerInfo .container .pTags span {
+        color: #fff;
+        font-family: "PT Sans", Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        font-weight: bold; }
+    #footerInfo .container h4 {
+      text-align: center;
+      color: #fff;
+      font-size: 1em;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 15px; }
+    #footerInfo .container .col-md-4 i {
+      font-size: 3.4em;
+      margin: 12px;
+      color: #00b4f0;
+      cursor: pointer; }
+      #footerInfo .container .col-md-4 i:hover {
+        color: #00a1d7; }
+    #footerInfo .container .col-md-3 div {
+      padding: 13px; }
+      #footerInfo .container .col-md-3 div i {
+        font-size: 1.3em;
+        color: #00a1d7; }
+      #footerInfo .container .col-md-3 div a {
+        font-family: "PT Sans", Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        text-decoration: none;
+        color: #00a1d7;
+        transition: all 0.5s ease; }
+        #footerInfo .container .col-md-3 div a:hover {
+          color: #00b4f0;
+          text-decoration: underline; }
+      #footerInfo .container .col-md-3 div span {
+        color: #fff;
+        font-family: "PT Sans", Arial, Helvetica, sans-serif;
+        font-size: 1em; }
+    @media screen and (max-width: 760px) {
+      #footerInfo .container .pTags {
+        width: 100%; }
+      #footerInfo .container h4 {
+        margin-top: 35px;
+        font-size: 0.9em; }
+      #footerInfo .container .col-md-4 {
+        text-align: left; }
+        #footerInfo .container .col-md-4 div {
+          display: inline-block; }
+          #footerInfo .container .col-md-4 div i {
+            font-size: 2.3em; } }
+    #footerInfo .container h2 {
+      font-size: 0.9em;
+      color: #b2b2b2;
+      text-align: center;
+      margin: 5px 0; }
+      #footerInfo .container h2:nth-child(1) {
+        margin-top: 70px; }
+      #footerInfo .container h2 ul {
+        display: inline-block;
+        transition: all 0.4s ease;
+        cursor: pointer; }
+        #footerInfo .container h2 ul:hover {
+          color: #80dfff; }
 
 body, html {
   margin: 0;

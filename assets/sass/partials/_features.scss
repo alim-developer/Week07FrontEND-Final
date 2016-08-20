@@ -1,6 +1,7 @@
 #features{
-	.container-fluid{
+	.colorGrayBackground{
 		background-color: #F0F0F0;
+		width: 100%;
 
 		.container{
 			padding-top: 50px;
@@ -9,11 +10,11 @@
 				width: 30%;
 				float: left;
 				margin-top: 32px;
-				
+				position: relative;
+				z-index: 11;
 				div{
 					border-top-left-radius: 5px;
 					border-bottom-left-radius: 5px;
-					border: 1px solid $colorBlueBtn;
 					padding: 30px;
 					width: 100%;
 					
@@ -36,7 +37,7 @@
 			}
 
 			img{
-				width: 76%;
+				width: 76.5%;
 				position: absolute;
 				right: 0;
 			}
@@ -107,6 +108,9 @@
 			i{
 				color: $colorBlueText;
 				margin-bottom: 25px;
+				&:hover{
+					color: lighten($colorBlueText, 10%);
+				}
 			}
 			h4{
 				font-size: 1em;

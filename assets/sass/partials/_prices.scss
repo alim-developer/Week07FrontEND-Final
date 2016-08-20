@@ -30,11 +30,15 @@
 				border-left: 3px solid $colorBlueBtn;
 				text-indent: 15px;
 				font-size: 1.2em;
-				margin-top:15px;
-				&:last-child{
+				margin-top: 15px;
+			}
+
+			@media screen and (max-width: 700px){
+				input{
 					width: 100%;
 				}
 			}
+
 
 			button{
 				@include button(transparent, $colorWhite, 12px 28px);

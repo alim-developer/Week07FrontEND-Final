@@ -20,14 +20,17 @@
 				background-color: transparent;
 				transition: all 0.3s ease;
 				text-transform: uppercase;
-				// &:first-child{
-				// 	background-color: $colorBlueBtn;
-				// 	color: #fff;
-				// }
-
 				&:hover{
 					background-color: $colorBlueBtn;
 					color: #fff;
+				}
+			}
+		}
+		@media screen and (max-width: 760px){
+			.tabs{
+				padding: 60px 20px;
+				button{
+					width: 100%;
 				}
 			}
 		}
@@ -53,7 +56,6 @@
 				.p{
 					padding: 0 100px;
 				}
-
 				p{
 					font-size: 1em;
 					font-family: $fontPT;
@@ -105,14 +107,11 @@
 			.company p{
 				padding: 0 50px;
 			}
-		}
-	}
-}
-
-@media screen and (max-width: 480px){
-	.tabs{
-		button{
-			width: 230px;
+			@media screen and (max-width: 770px){
+				.col-md-4{
+					padding: 0;
+				}
+			}
 		}
 	}
 }

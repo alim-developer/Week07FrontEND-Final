@@ -18,28 +18,48 @@ function preloader(){
 		$("#preloader").fadeOut();
 	});
 }
+// preloader();
 
 
 function homeExtra(){
 	$(".drop ul").hide();
-	$(".extra").mouseenter(function(){
-		$(this).css({
-			backgroundColor: "#000"
-			
-		});
-	});
-	$(".extra").mouseleave(function(){
-		$(this).css({
-			backgroundColor: "transparent"
-			
-		});
-	});
 	$(".drop").mouseenter(function() {
 		$(".drop ul").slideDown();	
+		$(".drop .extra").css({
+			borderTop: "4px solid #1AC6FF",
+			backgroundColor: "#000"
+		});
+
+		$(".drop .homePages").hide();
+		$(".drop .blog").hide();
+		$(".drop .ecommerce").hide();
+		$(".drop li").eq(0).mouseenter(function() {
+			$(".drop .homePages").show(300);
+		});
+		$(".drop li").eq(0).mouseleave(function() {
+			$(".drop .homePages").hide(300);
+		});
+		$(".drop li").eq(9).mouseenter(function() {
+			$(".drop .blog").show(300);
+		});
+		$(".drop li").eq(9).mouseleave(function() {
+			$(".drop .blog").hide(300);
+		});
+		$(".drop li").eq(12).mouseenter(function() {
+			$(".drop .ecommerce").show(300);
+		});
+		$(".drop li").eq(12).mouseleave(function() {
+			$(".drop .ecommerce").hide(300);
+		});
 	});
 	$(".drop").mouseleave(function() {
-		$(".drop ul").slideUp();	
+		$(".drop ul").slideUp();
+		$(".drop .extra").css({
+			borderTop: "",
+			backgroundColor: "transparent"
+		});
 	});
+
 }
 homeExtra();
 
@@ -210,7 +230,7 @@ function profile(){
 		borderBottom: "1px solid #DDDDDD"
 	});
 	$("#profile .profilDate").eq(1).css({
-		borderBottom: "1px solid #DDDDDD"
+		borderBottom: "1px solid #1AC6FF"
 	});
 	$("#profile .profilDate").eq(2).css({
 		borderBottom: "1px solid #DDDDDD"

@@ -5860,6 +5860,19 @@ button.close {
           text-decoration: none;
           padding: 15px 0;
           border-bottom: 1px solid #343434; }
+        #home .container .navbar-nav .drop ul li .homePages, #home .container .navbar-nav .drop ul li .blog, #home .container .navbar-nav .drop ul li .ecommerce {
+          position: absolute;
+          left: 190px;
+          top: 0; }
+        #home .container .navbar-nav .drop ul li .blog {
+          top: 50px; }
+        #home .container .navbar-nav .drop ul li .ecommerce {
+          top: 100px; }
+        @media screen and (min-width: 760px) and (max-width: 1200px) {
+          #home .container .navbar-nav .drop ul li .homePages, #home .container .navbar-nav .drop ul li .blog, #home .container .navbar-nav .drop ul li .ecommerce {
+            position: absolute;
+            left: -190px;
+            top: 0; } }
   #home .container button {
     margin: 5px 0;
     background: transparent;
@@ -5891,6 +5904,23 @@ button.close {
         background-color: #1AC6FF; }
         #home .container button:nth-child(2):hover a {
           color: white; }
+  @media screen and (min-width: 760px) and (max-width: 1200px) {
+    #home .container .navbar-nav a {
+      padding: 5px; }
+    #home .container button {
+      background: transparent;
+      border: 1px solid white;
+      border-radius: 3px;
+      text-align: center;
+      padding: 5px 0;
+      margin: 0; }
+      #home .container button a {
+        display: block;
+        font-size: 0.9em;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 0 13px; } }
   #home .container .content {
     margin: 228px 0;
     text-align: center;
@@ -5997,6 +6027,11 @@ button.close {
     #about .cont .tabs button:hover {
       background-color: #1AC6FF;
       color: #fff; }
+@media screen and (max-width: 760px) {
+  #about .cont .tabs {
+    padding: 60px 20px; }
+    #about .cont .tabs button {
+      width: 100%; } }
 #about .cont .firstTab, #about .cont .secondTab, #about .cont .thirdTab {
   border-bottom: 1px solid lightgray;
   padding: 15px 0; }
@@ -6057,71 +6092,73 @@ button.close {
   display: inline-block; }
 #about .cont .thirdTab .company p {
   padding: 0 50px; }
+@media screen and (max-width: 770px) {
+  #about .cont .thirdTab .col-md-4 {
+    padding: 0; } }
 
-@media screen and (max-width: 480px) {
-  .tabs button {
-    width: 230px; } }
-#features .container-fluid {
-  background-color: #F0F0F0; }
-  #features .container-fluid .container {
+#features .colorGrayBackground {
+  background-color: #F0F0F0;
+  width: 100%; }
+  #features .colorGrayBackground .container {
     padding-top: 50px;
     position: relative; }
-    #features .container-fluid .container .lorem {
+    #features .colorGrayBackground .container .lorem {
       width: 30%;
       float: left;
-      margin-top: 32px; }
-      #features .container-fluid .container .lorem div {
+      margin-top: 32px;
+      position: relative;
+      z-index: 11; }
+      #features .colorGrayBackground .container .lorem div {
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
-        border: 1px solid #1AC6FF;
         padding: 30px;
         width: 100%; }
-        #features .container-fluid .container .lorem div h4 {
+        #features .colorGrayBackground .container .lorem div h4 {
           font-size: 1.1em;
           font-weight: bold;
           text-transform: uppercase;
           line-height: 30px;
           color: #1AC6FF; }
-        #features .container-fluid .container .lorem div p {
+        #features .colorGrayBackground .container .lorem div p {
           font-family: "PT Sans", Arial, Helvetica, sans-serif;
           font-size: 1em;
           line-height: 30px;
           color: #5a5a5a;
           margin: 0; }
-    #features .container-fluid .container img {
-      width: 76%;
+    #features .colorGrayBackground .container img {
+      width: 76.5%;
       position: absolute;
       right: 0; }
     @media screen and (min-width: 480px) and (max-width: 1200px) {
-      #features .container-fluid .container .lorem {
+      #features .colorGrayBackground .container .lorem {
         display: flex;
         justify-content: center;
         width: 100%; }
-      #features .container-fluid .container img {
+      #features .colorGrayBackground .container img {
         width: 100%;
         margin: 0 auto;
         position: relative;
         top: 35px; } }
     @media screen and (min-width: 480px) and (max-width: 630px) {
-      #features .container-fluid .container .lorem div {
+      #features .colorGrayBackground .container .lorem div {
         padding: 15px; }
-        #features .container-fluid .container .lorem div h4 {
+        #features .colorGrayBackground .container .lorem div h4 {
           font-size: 1em; }
-        #features .container-fluid .container .lorem div p {
+        #features .colorGrayBackground .container .lorem div p {
           line-height: 20px; }
-      #features .container-fluid .container img {
+      #features .colorGrayBackground .container img {
         position: relative;
         top: 15px; } }
     @media screen and (max-width: 480px) {
-      #features .container-fluid .container .lorem {
+      #features .colorGrayBackground .container .lorem {
         width: 100%; }
-        #features .container-fluid .container .lorem div {
+        #features .colorGrayBackground .container .lorem div {
           padding: 15px; }
-          #features .container-fluid .container .lorem div h4 {
+          #features .colorGrayBackground .container .lorem div h4 {
             font-size: 1em; }
-          #features .container-fluid .container .lorem div p {
+          #features .colorGrayBackground .container .lorem div p {
             line-height: 20px; }
-      #features .container-fluid .container img {
+      #features .colorGrayBackground .container img {
         width: 100%;
         margin: 0 auto;
         position: relative;
@@ -6133,6 +6170,8 @@ button.close {
     #features .feature .col-md-3 i {
       color: #1AC6FF;
       margin-bottom: 25px; }
+      #features .feature .col-md-3 i:hover {
+        color: #4dd3ff; }
     #features .feature .col-md-3 h4 {
       font-size: 1em;
       font-weight: bold;
@@ -6182,8 +6221,9 @@ button.close {
     text-indent: 15px;
     font-size: 1.2em;
     margin-top: 15px; }
-    #prices .container-fluid .container input:last-child {
-      width: 100%; }
+  @media screen and (max-width: 7000px) {
+    #prices .container-fluid .container input {
+      width: 100%; } }
   #prices .container-fluid .container button {
     background: transparent;
     border: 1px solid #fff;
@@ -6621,7 +6661,8 @@ button.close {
   #footer .container-fluid .container {
     padding: 40px 0; }
     #footer .container-fluid .container i {
-      color: #fff; }
+      color: #fff;
+      margin: 10px; }
     #footer .container-fluid .container h2 {
       font-size: 3em;
       color: #fff; }

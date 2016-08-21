@@ -5814,6 +5814,86 @@ button.close {
 .clearFix {
   clear: both; }
 
+.hideAnimation {
+  position: relative;
+  opacity: 0; }
+
+.animationUpY {
+  position: relative;
+  opacity: 0;
+  transform: translateY(-20px); }
+
+.animationUpY70px {
+  position: relative;
+  opacity: 0;
+  transform: translateY(-70px); }
+
+.animationLeftX100px {
+  position: relative;
+  opacity: 0;
+  transform: translateX(-100px); }
+
+.animationRightX100px {
+  position: relative;
+  opacity: 0;
+  transform: translateX(100px); }
+
+.animationDownY {
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px); }
+
+.animationDownY100px {
+  position: relative;
+  opacity: 0;
+  transform: translateY(-100px); }
+
+.animationUpY100px {
+  position: relative;
+  opacity: 0;
+  transform: translateY(100px); }
+
+.animationLeftXmin {
+  position: relative;
+  opacity: 1;
+  transform: translateX(-50px); }
+
+.animationRightXmin {
+  position: relative;
+  opacity: 1;
+  transform: translateX(50px); }
+
+.animationLeftX {
+  position: relative;
+  opacity: 0;
+  transform: translateX(-1000px); }
+
+.animationRightX {
+  position: relative;
+  opacity: 0;
+  transform: translateX(1000px); }
+
+.animationShow {
+  opacity: 1;
+  transform: translateY(0px);
+  transform: translateX(0px);
+  transition: all 0.4s ease; }
+
+#about, #features, #prices {
+  overflow: hidden; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(-360deg); }
+  50% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+#preloader div {
+  margin: 0 auto;
+  margin-top: 320px;
+  animation: spin 5s ease infinite; }
+
 #home {
   background-image: url("../images/backgroundImage.jpg");
   background-repeat: no-repeat;
@@ -5872,7 +5952,28 @@ button.close {
           #home .container .navbar-nav .drop ul li .homePages, #home .container .navbar-nav .drop ul li .blog, #home .container .navbar-nav .drop ul li .ecommerce {
             position: absolute;
             left: -190px;
-            top: 0; } }
+            top: 0; }
+          #home .container .navbar-nav .drop ul li .blog {
+            top: 50px; }
+          #home .container .navbar-nav .drop ul li .ecommerce {
+            top: 100px; } }
+    @media screen and (max-width: 480px), screen and (min-width: 480px) and (max-width: 768px) {
+      #home .container .navbar-nav .drop ul {
+        width: 100%; }
+        #home .container .navbar-nav .drop ul li {
+          width: 100%; }
+          #home .container .navbar-nav .drop ul li .homePages, #home .container .navbar-nav .drop ul li .blog, #home .container .navbar-nav .drop ul li .ecommerce {
+            position: relative;
+            left: 0;
+            right: 0; }
+          #home .container .navbar-nav .drop ul li .blog {
+            top: 0px; }
+          #home .container .navbar-nav .drop ul li .ecommerce {
+            top: 10px; }
+          #home .container .navbar-nav .drop ul li ul {
+            width: 100%; }
+            #home .container .navbar-nav .drop ul li ul li {
+              width: 100%; } }
   #home .container button {
     margin: 5px 0;
     background: transparent;
@@ -5999,8 +6100,6 @@ button.close {
       margin: 155px 0; }
     #home .container li {
       text-align: center; }
-    #home .container .extra {
-      display: none; }
     #home .container form {
       text-align: center; } }
   @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -6013,8 +6112,10 @@ button.close {
   background-color: #F0F0F0; }
   #about .backColor .logo {
     padding: 25px 0; }
-    #about .backColor .logo img {
-      margin: 0 20px; }
+    #about .backColor .logo div {
+      display: inline-block; }
+      #about .backColor .logo div img {
+        margin: 0 20px; }
 #about .cont .tabs {
   padding: 60px; }
   #about .cont .tabs button {
@@ -6221,7 +6322,7 @@ button.close {
     text-indent: 15px;
     font-size: 1.2em;
     margin-top: 15px; }
-  @media screen and (max-width: 7000px) {
+  @media screen and (max-width: 700px) {
     #prices .container-fluid .container input {
       width: 100%; } }
   #prices .container-fluid .container button {
@@ -6656,134 +6757,134 @@ button.close {
       #profile .container .profile .profilDate div {
         width: 100%; } }
 
-#footer .container-fluid {
+#contacts .container-fluid {
   background-color: #1AC6FF; }
-  #footer .container-fluid .container {
+  #contacts .container-fluid .container {
     padding: 40px 0; }
-    #footer .container-fluid .container i {
+    #contacts .container-fluid .container i {
       color: #fff;
       margin: 10px; }
-    #footer .container-fluid .container h2 {
+    #contacts .container-fluid .container h2 {
       font-size: 3em;
       color: #fff; }
-    #footer .container-fluid .container p {
+    #contacts .container-fluid .container p {
       font-size: 1em;
       font-family: "PT Sans", Arial, Helvetica, sans-serif;
       color: #fff; }
-    #footer .container-fluid .container button {
+    #contacts .container-fluid .container button {
       background: transparent;
       border: 1px solid #fff;
       border-radius: 3px;
       text-align: center;
       margin: 15px;
       transition: all 0.3s ease; }
-      #footer .container-fluid .container button a {
+      #contacts .container-fluid .container button a {
         display: block;
         font-size: 0.9em;
         text-decoration: none;
         color: #fff;
         text-transform: uppercase;
         padding: 13px 23px; }
-      #footer .container-fluid .container button:hover {
+      #contacts .container-fluid .container button:hover {
         background-color: #fff; }
-        #footer .container-fluid .container button:hover a {
+        #contacts .container-fluid .container button:hover a {
           color: #1AC6FF;
           transition: all 0.3s ease; }
     @media screen and (min-width: 1200px) {
-      #footer .container-fluid .container h2, #footer .container-fluid .container p {
+      #contacts .container-fluid .container h2, #contacts .container-fluid .container p {
         text-align: left; } }
     @media screen and (max-width: 480px) {
-      #footer .container-fluid .container h2 {
+      #contacts .container-fluid .container h2 {
         font-size: 2.4em; }
-      #footer .container-fluid .container p {
+      #contacts .container-fluid .container p {
         font-size: 0.9em;
         line-height: 26px; } }
     @media screen and (min-width: 480px) and (max-width: 760px) {
-      #footer .container-fluid .container h2 {
+      #contacts .container-fluid .container h2 {
         font-size: 2.4em; }
-      #footer .container-fluid .container p {
+      #contacts .container-fluid .container p {
         font-size: 0.9em; } }
 
-#footerInfo {
+#footer {
   background-image: url("../images/backgroundImage.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover; }
-  #footerInfo .container {
+  #footer .container {
     padding-top: 70px;
     padding-bottom: 25px; }
-    #footerInfo .container img {
+    #footer .container img {
       opacity: 0.7; }
-    #footerInfo .container .pTags {
+    #footer .container .pTags {
       width: 80%; }
-      #footerInfo .container .pTags p {
+      #footer .container .pTags p {
         color: #fff;
         font-family: "PT Sans", Arial, Helvetica, sans-serif;
         font-size: 1em;
         margin-top: 30px;
         margin-bottom: 15px; }
-      #footerInfo .container .pTags span {
+      #footer .container .pTags span {
         color: #fff;
         font-family: "PT Sans", Arial, Helvetica, sans-serif;
         font-size: 1em;
         font-weight: bold; }
-    #footerInfo .container h4 {
+    #footer .container h4 {
       text-align: center;
       color: #fff;
       font-size: 1em;
       font-weight: bold;
       text-transform: uppercase;
       margin-bottom: 15px; }
-    #footerInfo .container .col-md-4 i {
+    #footer .container .col-md-4 i {
       font-size: 3.4em;
       margin: 12px;
       color: #00b4f0;
       cursor: pointer; }
-      #footerInfo .container .col-md-4 i:hover {
+      #footer .container .col-md-4 i:hover {
         color: #00a1d7; }
-    #footerInfo .container .col-md-3 div {
+    #footer .container .col-md-3 div {
       padding: 13px; }
-      #footerInfo .container .col-md-3 div i {
+      #footer .container .col-md-3 div i {
         font-size: 1.3em;
         color: #00a1d7; }
-      #footerInfo .container .col-md-3 div a {
+      #footer .container .col-md-3 div a {
         font-family: "PT Sans", Arial, Helvetica, sans-serif;
         font-size: 1em;
         text-decoration: none;
         color: #00a1d7;
         transition: all 0.5s ease; }
-        #footerInfo .container .col-md-3 div a:hover {
+        #footer .container .col-md-3 div a:hover {
           color: #00b4f0;
           text-decoration: underline; }
-      #footerInfo .container .col-md-3 div span {
+      #footer .container .col-md-3 div span {
         color: #fff;
         font-family: "PT Sans", Arial, Helvetica, sans-serif;
         font-size: 1em; }
     @media screen and (max-width: 760px) {
-      #footerInfo .container .pTags {
+      #footer .container .pTags {
         width: 100%; }
-      #footerInfo .container h4 {
+      #footer .container h4 {
         margin-top: 35px;
         font-size: 0.9em; }
-      #footerInfo .container .col-md-4 {
+      #footer .container .col-md-4 {
         text-align: left; }
-        #footerInfo .container .col-md-4 div {
+        #footer .container .col-md-4 div {
           display: inline-block; }
-          #footerInfo .container .col-md-4 div i {
+          #footer .container .col-md-4 div i {
             font-size: 2.3em; } }
-    #footerInfo .container h2 {
+    #footer .container h2 {
       font-size: 0.9em;
       color: #b2b2b2;
       text-align: center;
       margin: 5px 0; }
-      #footerInfo .container h2:nth-child(1) {
+      #footer .container h2:nth-child(1) {
         margin-top: 70px; }
-      #footerInfo .container h2 ul {
+      #footer .container h2 ul {
         display: inline-block;
         transition: all 0.4s ease;
         cursor: pointer; }
-        #footerInfo .container h2 ul:hover {
+        #footer .container h2 ul:hover {
           color: #80dfff; }
 
 body, html {

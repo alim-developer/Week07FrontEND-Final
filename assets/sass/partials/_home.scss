@@ -80,6 +80,37 @@
 								left: -190px;
 								top: 0;
 							}
+							.blog{
+								top: 50px;
+							}
+							.ecommerce{
+								top: 100px;
+							}
+						}
+					}
+				}
+				@media screen and (max-width: 480px), screen and (min-width: 480px) and (max-width: 768px){
+						ul{
+							width: 100%;
+							li{
+							width: 100%;
+							.homePages, .blog, .ecommerce{
+								position: relative;
+								left: 0;
+								right: 0;
+							}
+							.blog{
+								top: 0px;
+							}
+							.ecommerce{
+								top: 10px;
+							}
+							ul{
+								width: 100%;
+								li{
+									width: 100%;
+								}
+							}
 						}
 					}
 				}
@@ -250,7 +281,7 @@
 				text-align: center;
 			}
 			.extra{
-				display: none;
+				// display: none;
 			}
 			form {
 				text-align: center;

@@ -6322,7 +6322,7 @@ button.close {
     text-indent: 15px;
     font-size: 1.2em;
     margin-top: 15px; }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 760px) {
     #prices .container-fluid .container input {
       width: 100%; } }
   #prices .container-fluid .container button {

@@ -49,6 +49,7 @@
 
 				ul{
 					position: absolute;
+					z-index: 1111;
 					
 					li{
 						width: 190px;
@@ -103,7 +104,7 @@
 								top: 0px;
 							}
 							.ecommerce{
-								top: 10px;
+								top: 0px;
 							}
 							ul{
 								width: 100%;

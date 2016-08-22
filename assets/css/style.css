@@ -5928,7 +5928,8 @@ button.close {
       #home .container .navbar-nav a:hover {
         color: #1AC6FF; }
     #home .container .navbar-nav .drop ul {
-      position: absolute; }
+      position: absolute;
+      z-index: 1111; }
       #home .container .navbar-nav .drop ul li {
         width: 190px;
         background-color: #272727;
@@ -5969,7 +5970,7 @@ button.close {
           #home .container .navbar-nav .drop ul li .blog {
             top: 0px; }
           #home .container .navbar-nav .drop ul li .ecommerce {
-            top: 10px; }
+            top: 0px; }
           #home .container .navbar-nav .drop ul li ul {
             width: 100%; }
             #home .container .navbar-nav .drop ul li ul li {
